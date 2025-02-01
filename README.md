@@ -1,16 +1,15 @@
 <h1 align = "center">Employees_Turnover_Analysis_SalifortMotors</h1> 
 
 <section>
-<h2>Overview</h2> <p>The goal of this project was to create a multiple linear regression and random forest model to predict high rider gratuity or not. This project utilized yellow taxi trips taken in New York City during 2017. The final random forest model performed with 86% accuracy and 72% precision determining what features were most important in separating low tippers from high tippers. Based on the model, the duration, distance, and cost of the trip were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). </p>
+<h2>Overview</h2> <p>The goal of this project was to build and evaluate a logistic regression model or the following machine learning models: decision tree, random forest, XGBoost to predict whether an employee will leave the company, and discover the reasons behind their departure. This project utilized ,HR_capstone_dataset.csv, self-reported information from employees of a multinational vehicle manufacturing corporation. The final random forest model performed with 96% accuracy and 87% precision determining what features were most important in employee retention. Based on the model, <b>last_evaluation, number_project, tenure, and overworked</b> are most important driving factor in employee departure.</p>
 </section>
 
 <section>
-  <h2>Business Understanding</h2><p>According to salary.com the average salary for a New York Taxi Driver is around $45,000. This salary is significantly low compared to a median rent value of $6,500 per month. It is important to understand what factors encourage riders to leave tips in order to help drivers obtain a livable wage. </p>
+  <h2>Business Understanding</h2><p>Salifort strives to create a corporate culture that supports employee success and professional development. Further, the high turnover rate is costly in the financial sense. Salifort makes a big investment in recruiting, training, and upskilling its employees. It is important to understand what factors discoureage them to continue and fit in the company. </p>
 </section>
 <section>
-  <h2>Data Understanding</h2><p>The NYC Taxi and Limousine Commission data came from 
-<a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page">NYC.gov</a>
-    . The data consisted of approximately 408k unique trips and 18 features. The features included information on trip duration and destination, vendor used, toll information, and payment type. The bar chart below shows the breakdown of how many generous tippers (>20%) versus non-generous tippers that exist in the data set.
+  <h2>Data Understanding</h2><p>The HR_Capstone_Data.csv is the internal data accumulated and curated by the HR from the company employees.
+.The data consisted of approximately 15k unique employee report records and 10 features. The features included information on satisfaction_level, last_evaluation, number_project, average_monthly_hours, time_spend_company, work_accident, left, promotion_last_5years, department, salary. The bar chart below shows the breakdown of how many generous tippers (>20%) versus non-generous tippers that exist in the data set.
 </p>
   <img src="images/Fig1.png" alt="Generous VS Non-Generous tippers" width="600" />
 <p>In connection to this, a feature was engineered to represent if a ride was taken during rush hour or not. Multiple redundant columns were dropped and reformatted into the proper data type. </p>
