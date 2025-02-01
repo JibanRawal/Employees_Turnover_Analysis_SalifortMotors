@@ -9,16 +9,16 @@
 </section>
 <section>
   <h2>Data Understanding</h2><p>The HR_Capstone_Data.csv is the internal data accumulated and curated by the HR from the company employees.
-.The data consisted of approximately 15k unique employee report records and 10 features. The features included information on satisfaction_level, last_evaluation, number_project, average_monthly_hours, time_spend_company, work_accident, left, promotion_last_5years, department, salary. The bar chart below shows the breakdown of how many generous tippers (>20%) versus non-generous tippers that exist in the data set.
+.The data consisted of approximately 15k unique employee report records and 10 features. The features included information on satisfaction_level, last_evaluation, number_project, average_monthly_hours, time_spend_company, work_accident, left, promotion_last_5years, department, salary. The pie chart below shows the proportion of the departure status that exist in the data set.
 </p>
-  <img src="images/Fig1.png" alt="Generous VS Non-Generous tippers" width="600" />
-<p>In connection to this, a feature was engineered to represent if a ride was taken during rush hour or not. Multiple redundant columns were dropped and reformatted into the proper data type. </p>
+  <img src="images/left and not left.png" alt="left vs not left ratio" width="600" />
+<p>In connection to this, a feature was engineered to represent if the data used was leaked data/simulated data or actual data that that exactly replicate actual scenarios. Multiple redundant columns were dropped and reformatted into the proper data type. For example, satisfaction_level column was dropped and transformed into new attributes overworked.</p>
 </section>
 
 <section>
-  <h2>Modeling and Evaluation</h2><p>A random forest model comprising 100 decision trees was used to determine feature importance in who would tip generously or not. The below plot shows that trip duration, distance, and the cost of a fare were the Top 3 most important factors in determining a generous tipper from a non-generous one. The overall model performed with 86% accuracy and 72% precision. </p>
-  <img src="images/Fig2.png" alt="Generous VS Non-Generous tippers" width="600" />
+  <h2>Modeling and Evaluation</h2><p>A random forest model comprising 300 decision trees was used to determine feature importance in who are on verge of departure. The below plot shows that last_evaluation, num_project and the tenure of a employees were the Top 3 most important factors in determining a  probability of the employee daparture. The overall model performed with 96% accuracy and 87% precision. </p>
+  <img src="images/rf feature importance.png" alt="Feature imporance chart of the random forest model" width="600" />
 </section>
-<section><h2>Conclusion</h2><p>This model can benefit Taxi Drivers in knowing if they will be tipped generously or not; however, running a parametric model to determine how much each variable will influence the actual price of the tip. In the future, adding more information on a rider’s past tipping behavior may also be beneficial in helping the stakeholder address their business problem. 
+<section><h2>Conclusion</h2><p>This model can benefit the executives of the company to plan and  built the effective data driven solution to prevent the employee leaving from the company and promote the good culture for employees and attract them for longer tenure. In the future, adding more information on a employees record and navigating historical data may also be beneficial in helping the stakeholder address their business problem. 
 </p></section>
 
